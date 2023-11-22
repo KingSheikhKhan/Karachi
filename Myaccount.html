@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Submit</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+      <!-- jQuery library -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  
+  <!-- Popper JS -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+   -->
+  <!-- Latest compiled JavaScript -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+
+    <style>
+
+      body{
+        background-image: url(img1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-5 bg-white m-auto form-box"></div>
+            <div>
+                <h3 style="margin-right: 70vh; font-family: playball;">Registration </h3>
+            </div>
+            <!-- <div>
+                <h4 class="text-center pt-4">Registration form</h4>
+            </div> -->
+        </div>
+        <form class="p-4">
+            <div id="user-field">
+                <input class="form-control" autocomplete="off" type="text" name="" placeholder="Full Name" id="User_value" onkeyup="username()">
+                <span id="icons">
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                </span>
+            </div>
+            <div id="email-field">
+                <input class="form-control" autocomplete="off" type="email" name="" placeholder="Email" id="email_value" onkeyup="email()">
+                <span id="icons">
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                </span>
+            </div>
+            <div id="pass-field">
+                <input class="form-control" autocomplete="off" type="password" name="" placeholder="Password" id="pass_value" onkeyup="Password()">
+                <span id="icons">
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                </span>
+            </div>
+            <div id="cpass-field">
+                <input class="form-control" autocomplete="off" type="password" name="" placeholder=" Confirm Password" id="cpass_value" onkeyup="cPassword()">
+                <span id="icons">
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                </span>
+            </div>
+            <div>
+                <button class=" btn btn-secondary col-12"> <a href="registration.html" style="color: antiquewhite;"> Register Now</a></button>
+            </div>
+        </form>
+    </div>    
+    <div class="row">
+        <div class="col-5 bg-white">
+
+        </div>
+    </div>
+    <script type="text/javascript" src="Validation.js"></script>
+</body>
+
+</html>

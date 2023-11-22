@@ -1,0 +1,9 @@
+body{
+   
+    background-image: linear-gradient(to right, rgb(238, 103, 177) ,rgb(240, 139, 68));
+
+}
+
+.card:hover{
+    box-shadow: 0 0 2px 2px rgb(204, 191, 191);
+}

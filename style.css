@@ -1,0 +1,40 @@
+body{
+    background-color: #DADA !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    max-height: 90%;
+}
+.success input,.success input:focus{
+    border: 1px solid #292;
+    outline: none;
+}
+.fail input,.fail input:focus{
+    border: 1px solid red;
+    outline: none;
+}
+.success #icons i.fa-check-circle{
+    color: #292;
+    visibility: visible;
+}
+.fail #icons i.fa-exclamation-circle{
+    color:red;
+    visibility: visible;
+}
+.success,.fail{
+    position: relative;
+}
+#icons i{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    visibility: hidden;
+}
+#user-field,#email-field,#pass-field,#cpass-field{
+    margin-bottom: 10px;
+}
+.form-box{
+    box-shadow: 0 0 4px 0 #222;
+    border-radius: 10px;
+}

@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>Marraige </title>
+    <style>
+      .wrapper {
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+}
+
+.card {
+  width: 280px;
+  height: 360px;
+  border-radius: 15px;
+  padding: 1.5rem;
+  background: white;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.4s ease-out;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+.card:hover {
+  transform: translateY(20px);
+}
+.card:hover:before {
+  opacity: 1;
+}
+.card:hover .info {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+}
+.card .info {
+  position: relative;
+  z-index: 3;
+  color: white;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s;
+}
+.card .info h1 {
+  margin: 0px;
+}
+.card .info p {
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 8px;
+}
+.card .info button {
+  padding: 0.6rem;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.card .info button:hover {
+  background: dodgerblue;
+  color: white;
+}
+.nav-item .nav-link
+{
+  color: black;
+}
+.nav-item .nav-link.active
+{
+  background-color: pink;
+}
+    </style>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md bg-light">
+      <!-- Brand -->
+   
+    
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar" style="justify-content: center;">
+        <ul class="navbar-nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="Birhday.html.HTML"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ABOUT.HTML">ABOUT </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="ORDERFORM.html">ORDER FORM</a>
+          </li>
+          <div class="dropdown show" >
+            <a class="btn btn- dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              ALL PRODUCTS
+            </a>
+          
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="Birhday.html.HTML">Birhday Cake</a>
+              <a class="dropdown-item" href="Anniversary.html">Anniversary Cake</a>
+              <a class="dropdown-item" href="EngAGEMENT.HTML">Engagement Cake</a>
+              <a class="dropdown-item" href="ALL PRODUCT.HTML">Marraige and so on</a>
+            </div>
+          </div>
+         
+          <li class="nav-item">
+            <a class="nav-link" href="CONTACT US.html">CONTACT US</a>
+          </li>
+         
+             
+        </ul> 
+      </div>
+    </nav>
+
+
+     <!--dupil-->
+    
+     <div class="row mt-3 mx-0">
+      <div class="col-md-3">
+        <div class="wrapper">
+          <div class="card">
+            <img src="products img/any9.jpg">
+            <div class="info">
+              <h1 style="font-size: 20px;">Scrumptious Nutty Snickers Choco Delight</h1>
+              <p></p>
+              <button data-toggle="modal" data-target="#myModal" onclick="detail('Scrumptious Nutty Snickers Choco Delight (with egg)','products img/any9.jpg','111448','Anything tastes perfect if it is made of chocolate and so this scrumptious cake by Bakingo. Baked with uttermost perfection, this delicious snicker cake is sure to double your appetite. Order it online and send it to your near and dear  ones on any occasion','$80')">See More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="wrapper">
+          <div class="card">
+            <img src="products img/mr1.jpg">
+            <div class="info">
+              <h1 style="font-size: 20px;">Vanilla Cake With Toppings</h1>
+              <p> <p>
+              <button data-toggle="modal" data-target="#myModal" onclick="detail('Vanilla Cake With Toppings (egg less)','products img/mr1.jpg','11149','Come alive with another tasty feast knocking on your doorstep, a lip-smacking vanilla cake with gem toppings and fondant one made on top. Get a taste of it yourself and send it to your loved ones too. This qualitative dish deserves a peck on everyones lips. Made with the freshest and top-quality ingredients it will leave you spellbound.','$90')">See More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="wrapper">
+          <div class="card">
+            <img src="products img/any11.jpg"/>
+            <div class="info">
+              <h1 style="font-size: 20px;">6 Month Half Themed Cake</h1>
+              <p></p>
+              <button data-toggle="modal" data-target="#myModal" onclick="detail('6 Month Half Themed Cake (with egg)','products img/any11.jpg','111450','When in love, every day feels good. And you have been in love for six months now. Its time to celebrate the auspicious day with your partner by munching on a peculiar and mouth-watering half-shaped Happy Six Months cake from Bakingo. The cake is decorated with palatable red hearts all over it','$70')">See More</button>
+             
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="wrapper">
+          <div class="card">
+            <img src="products img/any12.jpg"/>
+            <div class="info">
+              <h1 style="font-size: 20px;">Rose  and chocolate Cake</h1>
+              <p></p>
+              <button data-toggle="modal" data-target="#myModal" onclick="detail('Rose and  chocolate Cake (Egg less)','products img/any12.jpg','111451','Its very tasty cake and its very best cake  The cake is decorated with palatable red hearts all over it','$90')">See More</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+     <!--dupil2-->
+    
+    <div class="row mt-3 mx-0">
+      <div class="col-md-3">
+        <div class="wrapper">
+          <div class="card">
+            <img src="products img/eng10.jpg">
+            <div class="info">
+              <h1 style="font-size: 20px;">Strawberry Half Cake</h1>
+              <p></p>
+              <button data-toggle="modal" data-target="#myModal" onclick="detail('Strawberry Half Cake (with egg)','products img/eng10.jpg','111448',' We bring you a delicious and mouth-watering half-sized cake which is prepared especially to celebrate a half birthday. The cake is covered in whipped white cream and decorated with pink whipped cream on the corners and the sides. Colourful sprinkles on top bring delight to eye','$90')">See More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="wrapper">
+          <div class="card">
+            <img src="products img/eng11.jpg">
+            <div class="info">
+              <h1 style="font-size: 20px;">Round Strawberry Cream Cake</h1>
+              <p> <p>
+              <button data-toggle="modal" data-target="#myModal" onclick="detail('Round Strawberry Cream Cake (egg less)','products img/eng11.jpg','11149',' We bring you a delicious and mouth-watering half-sized cake which is prepared especially to celebrate a half birthday. The cake is covered in whipped white cream and decorated with pink whipped cream on the corners and the sides. Colourful sprinkles on top bring delight to eye','$90')">See More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="wrapper">
+          <div class="card">
+            <img src="products img/mr2.jpg"/>
+            <div class="info">
+              <h1 style="font-size: 20px;">kitkatt  Dark Chocolate Cake</h1>
+              <p></p>
+              <button data-toggle="modal" data-target="#myModal" onclick="detail('kitkatt Dark Chocolate Cake (with egg)','products img/mr2.jpg','111460','This one particular flavor is for those who prefer coffee over tea and coffee-flavored cake over chocolate flavored cakes. This cake is also extraordinary in its taste and would surely help you raise your cakey experience. Try once and order again and again..','$70')">See More</button>
+             
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="wrapper">
+          <div class="card">
+            <img src="products img/prdct4.jpg"/>
+            <div class="info">
+              <h1 style="font-size: 20px;">chocolate and vanilla cake</h1>
+              <p></p>
+              <button data-toggle="modal" data-target="#myModal" onclick="detail('chocolate and vanilla cake (Egg less)','products img/prdct4.jpg','111451','our vanilla and chocolate cake is very delicious and creamy it very good item of our bakery','$70')">See More</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+        
+        
+
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title" id="name"></h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      
+      <!-- Modal body -->
+      <div class="modal-body">
+        <img src="" width="100%" height="400px" id="myImg" alt="">
+        <h3 id="itemCode" class="mt-2"></h3>
+        <h3>Description</h3>
+        <p id="decs"></p>
+        <h3 id="price"></h3>
+      </div>
+      
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <a class="btn btn-danger" href="ORDERFORM.html" role="button">Add to cart</a>
+        <!-- <button type="button" class="btn btn-danger" data-dismiss="modal">Add to cart</button> -->
+      </div>
+      
+    </div>
+  </div>
+</div>
+   </body>
+   <script>
+     function detail(n,i,c,d,p)
+     {
+      document.getElementById('name').innerHTML=n;
+      document.getElementById('myImg').src=i;
+      document.getElementById('itemCode').innerHTML="Item Code : "+c;
+      document.getElementById('decs').innerHTML=d;
+      document.getElementById('price').innerHTML="Price : "+p;
+      // alert(n+"<br>"+i+"<br>"+c+"<br>"+d+"<br>"+p);
+     }
+   </script>
+  
+   </html>
